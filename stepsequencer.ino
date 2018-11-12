@@ -1,5 +1,5 @@
 
-int ledPins [4] = {3, 5, 7, 9};
+int ledPins [4] = {3, 5, 7, 11};
 int buttonPins [4] = {25, 26, 27, 28};
 int tempo = 0;
 int currentStep = 0;
@@ -20,7 +20,7 @@ void setup() {
   
  void loop () {
 
-  tempo = map(analogRead(A12), 0, 1023, 50, 1000);
+  tempo = map(analogRead(A13), 0, 1023, 50, 1000);
   sequence(); 
   checkButtons(); 
   setLeds();
